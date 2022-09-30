@@ -25,40 +25,42 @@
                 <h4>Swap</h4>
                 <div id="form">
                     <div class="swapbox">
-                        <div class="swapbox_select token_select" id="from_token_select">
+                        <div id="from_token_select" class="swapbox_select token_select">
                             <img class="token_img" id="from_token_img">
-                            <span id="from_token_text"></span>
+                            <span id="from_token_text">Token</span>
                         </div>
                         <div class="swapbox_select">
                             <input class="number form-control" placeholder="amount" id="from_amount">
                         </div>
                     </div>
-                    <div class="swapbox">
-                        <div class="swapbox_select token_select" id="to_token_select" >
-                            <img class="token_img" id="to_token_img">
-                            <span id="to_token_text"></span>
+                    <div id="to_token_select" class="swapbox">
+                        <div class="swapbox_select token_select">
+                          <img class="token_img" id="to_token_img">
+                          <span id="to_token_text">Token</span>
                         </div>
                          <div class="swapbox_select">
                             <input class="number form-control" placeholder="amount" id="to_amount">
                         </div>
                     </div>  
                     <div class="gas_estimate_label">Estimated Gas: <span id="gas_estimate"></span></div>
+                    <div class="best_sources">Sources:</div> <span id="sources"></span></div>
                     <button disabled class="btn btn-large btn-primary btn-block" id="swap_button">Swap</button>                
                 </div>
             </div>
         </div>
     </div>
+
     <div class="modal" id="token_modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Select a Token</h5>
+              <h5 class="modal-title">Modal title</h5>
               <button id="modal_close" type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-                <div id="token_list"></div>
+              <div id="token_list"></div>
             </div>
           </div>
         </div>
